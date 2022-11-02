@@ -9,6 +9,16 @@ public class bubbleSort {
                 System.out.println();
                 System.out.print(elements[i]+"|");
             }
+            System.out.println();
+            for (int i=0; i<=8; i++){
+                for (int j=0; j<=8; j++){
+                    if (elements[j]>elements[j+1]){
+                        int temp=elements[j];
+                        elements[j]=elements[j+1];
+                        elements[j+1]=temp;
+                    }
+                }
+            }
         }
 
     public static void clear() {
