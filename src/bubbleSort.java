@@ -18,11 +18,34 @@ public class bubbleSort {
                         elements[j+1]=temp;
                     }
                 }
+                for (int l = 0; l <= 9; l++) {
+                    System.out.println();
+                    System.out.print(elements[i]+"|");
+                }
+                System.out.println();
+                wait(100);
+            }
+            wait(1000);
+            clear();
+            System.out.print("Done!");
+            for (int i = 0; i <= 9; i++) {
+                System.out.println();
+                System.out.print(elements[i]+"|");
             }
         }
 
     public static void clear() {
 
         System.out.print("\033[H\033[2J");
+    }
+    public static void wait(int ms) {
+        try
+        {
+            Thread.sleep(ms);
+        }
+        catch(InterruptedException ex)
+        {
+            Thread.currentThread().interrupt();
+        }
     }
 }
